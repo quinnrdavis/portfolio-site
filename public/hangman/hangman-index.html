@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <a class="back" href="./..">Back</a>
+        <div class="container">
+            <h1 class="header__title">Hangman</h1>
+            <h2 class="header__subtitle">Use the keyboard to guess</h2>
+        </div>
+    </header>
+    <div class="puzzle-container">
+        <div id="guesses" class="guesses">
+        </div>
+        <p id="puzzle" class="puzzle"></p>
+        <p id="status" class="warning"></p>
+        <button id="reset" class="button">Reset</button>
+    </div>
+    <script src="/scripts/hangman-bundle.js"></script>
+</body>
+
+</html>

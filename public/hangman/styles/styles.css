@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #292941;
+  color: #fafafa;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+span {
+  border-bottom: 1px solid #39324b;
+  display: inline-block;
+  font-size: 2rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  margin: 0 0.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 2.4rem;
+}
+
+p {
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Header */
+
+.header {
+  background: #c07d4f;
+  color: white;
+  display: flex;
+  padding: 1.6rem 0;
+  position: relative;
+}
+
+.back {
+  color: white;
+  float: left;
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-left: 1.6rem;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__title {
+  font-size: 3.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.header__subtitle {
+  /* color: #777; */
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.guesses {
+  color: gray;
+  flex-wrap: wrap;
+  transform: translateY(-1000%);
+}
+
+.guessed {
+  color: #fafafa;
+}
+
+.puzzle-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.puzzle {
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+
+.button {
+  background: #c07d4f;
+  border: none;
+  border-bottom: 2px solid #96613e;
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 0.8rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background: #96613e;
+}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  color: rgb(0, 68, 0);
+  text-decoration: none;
+}
+
+.greeting {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.greeting h1 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.greeting h2 {
+  font-weight: lighter;
+  justify-content: left;
+}
+
+.projects {
+  border-top: 2px solid gray;
+}
+
+.project-link {
+  font-size: 3.2rem;
+  padding: 3rem 8rem 0 16rem;
+}
+
+.project-link p {
+  font-size: 1.6rem;
+}

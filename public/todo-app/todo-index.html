@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./images/favicon.png?">
+</head>
+
+<body>
+    <header class="header">
+        <a class="back" href="./..">Back</a>
+        <div class="container">
+            <h1 class="header__title">Todo List</h1>
+            <h2 class="header__subtitle">What do you need to do?</h2>
+        </div>
+    </header>
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search" class="input" type="text" placeholder="Search todos">
+            <label class="checkbox">
+                <input id="hide-completed" type="checkbox">Hide Completed
+            </label>
+        </div>
+    </div>
+    <div class="container">
+        <div id="todos"></div>
+        <form id="add-todo-form">
+            <input type="text" class="input" placeholder="Add a todo" name="addTodo">
+            <button class="button">Submit</button>
+        </form>
+    </div>
+
+    <script src="/scripts/todo-bundle.js"></script>
+</body>
+
+</html>
