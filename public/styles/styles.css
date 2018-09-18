@@ -4,45 +4,79 @@
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
 }
 
-a {
-  color: rgb(0, 68, 0);
+.main-header {
+  padding: 8px 16px;
+  width: 100%;
+  border-bottom: 2px solid gray;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-header div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header nav {
+  display: inline-block;
+  width: calc(100% - 189px);
+  vertical-align: middle;
+  text-align: right;
+}
+
+.main-header li {
+  display: inline-block;
+  list-style: none;
+}
+
+.main-header a {
+  color: #0e4f1f;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.main-header a:active,
+.main-header a:hover,
+.main-header a:focus {
+  border-bottom: 4px solid #0e4f1f;
 }
 
 .greeting {
+  margin-top: 6rem;
   text-align: center;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  padding: 6rem 0;
+  border-bottom: 2px solid gray;
 }
 
 .greeting h1 {
   font-size: 6rem;
-  font-weight: 500;
 }
 
 .greeting h2 {
-  font-weight: lighter;
-  justify-content: left;
+  margin-top: 1.6rem;
+  text-align: left;
+  padding: 0 8rem;
 }
 
-.projects {
-  border-top: 2px solid gray;
+.project {
+  display: inline-block;
+  width: 30%;
+  height: 24rem;
+  vertical-align: top;
+  padding: 2rem;
+  margin: 2rem 0 0 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: #0e4f1f;
 }
 
-.project-link {
-  font-size: 3.2rem;
-  padding: 3rem 8rem 0 16rem;
-}
-
-.project-link p {
-  font-size: 1.6rem;
+.project:hover,
+.project:active,
+.project:focus {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: calc(2rem - 2px) 2px 0 calc(2rem - 2px);
 }
