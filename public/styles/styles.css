@@ -45,29 +45,27 @@ body {
 }
 
 .greeting {
-  margin-top: 6rem;
+  margin-top: 2rem;
   text-align: center;
-  padding: 6rem 0;
   border-bottom: 2px solid gray;
 }
 
 .greeting h1 {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 .greeting h2 {
-  margin-top: 1.6rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 1rem;
+  margin: 1.6rem 0;
   text-align: left;
-  padding: 0 8rem;
 }
 
 .project {
-  display: inline-block;
-  width: 30%;
-  height: 24rem;
-  vertical-align: top;
+  display: block;
   padding: 2rem;
-  margin: 2rem 0 0 2rem;
+  margin: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-decoration: none;
@@ -78,5 +76,35 @@ body {
 .project:active,
 .project:focus {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  margin: calc(2rem - 2px) 2px 0 calc(2rem - 2px);
+}
+
+@media (min-width: 43.75rem) {
+  .greeting {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .greeting h1 {
+    font-size: 6rem;
+  }
+
+  .greeting h2 {
+    font-size: 2rem;
+    width: 80%;
+    margin: 1.6rem 10vw 0 10vw;
+  }
+
+  .project {
+    display: inline-block;
+    width: 24%;
+    height: 16rem;
+    vertical-align: top;
+    margin: 2rem 0 0 7vw;
+  }
+
+  .project:hover,
+  .project:active,
+  .project:focus {
+    margin: calc(2rem - 2px) 2px 0 calc(7vw - 2px);
+  }
 }
