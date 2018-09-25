@@ -76,7 +76,16 @@ p {
 .guesses {
   color: gray;
   flex-wrap: wrap;
-  transform: translateY(-1000%);
+  font-size: 4rem;
+  position: fixed;
+  top: 16rem;
+  width: 35rem;
+}
+
+.guesses span {
+  font-size: 4rem;
+  height: 3.6rem;
+  width: 3.6rem;
 }
 
 .guessed {
@@ -89,6 +98,7 @@ p {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .puzzle {

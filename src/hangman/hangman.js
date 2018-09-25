@@ -74,6 +74,25 @@ class Hangman {
             if (this.guesses.join('').includes(letter)) {
                 unguessEl.classList.add('guessed')
             }
+
+            unguessEl.addEventListener('click', (e) => {
+                this.makeGuess(e.target.innerHTML)
+
+                const puzzleEl = document.querySelector('#puzzle')
+                const statusEl = document.querySelector('#status')
+
+                puzzleEl.innerHTML = ''
+                statusEl.textContent = this.showStatus()
+
+                this.getPuzzle().split('').forEach((letter) => {
+                    const letterEl = document.createElement('span')
+                    letterEl.textContent = letter
+                    puzzleEl.appendChild(letterEl)
+                })
+
+                this.renderGuesses()
+            })
+
             unguessedEl.appendChild(unguessEl)
         })
 

@@ -39,15 +39,16 @@ a {
   color: white;
   padding: 1.6rem 0;
   position: relative;
+  text-align: center;
 }
 
 .back {
   color: white;
-  float: left;
   font-size: 2.4rem;
   font-weight: 300;
   margin-left: 1.6rem;
   position: absolute;
+  left: 0;
   text-decoration: none;
   top: 50%;
   transform: translateY(-50%);
@@ -186,4 +187,13 @@ a {
 .empty-message {
   text-align: center;
   margin: 3.2rem 0;
+}
+
+@media (min-width: 43.75rem) {
+  .header {
+    text-align: left;
+  }
+  .container {
+    text-align: left;
+  }
 }

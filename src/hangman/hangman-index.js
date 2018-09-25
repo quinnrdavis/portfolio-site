@@ -1,4 +1,3 @@
-import uuidv4 from 'uuid/v4'
 import Hangman from './hangman'
 import getPuzzle from './requests'
 
